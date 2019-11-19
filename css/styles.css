@@ -1,0 +1,135 @@
+/*Red 1: #F5624D*/
+/*Red 2: #CC231E*/
+/*Green 1: #34A65F*/
+/*Green 2: #0F8A5F*/
+/*Blue 1: #235E6F*/
+
+@import url('https://fonts.googleapis.com/css?family=Mountains+of+Christmas|Open+Sans&display=swap');
+
+h1, h2, h3, p{
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+    background: #34A65F;
+}
+
+header{
+    background: #0F8A5F;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.text{
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+#text block{
+    color: #CC231E;
+}
+
+main{
+    text-align: center;
+    background: url(../img/winterland-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#snow-target {
+    overflow: hidden;
+   }
+
+.candle-wrapper{
+    position: relative;
+    height: 750px;
+}
+
+#candle-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 200;
+
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 70px;
+}
+
+.candle{
+    background-color: #CC231E;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.candle-top{
+    width: 200px;
+    margin: 0 auto;
+    z-index: 1;
+    margin-bottom: -5px;
+    margin-top: auto;
+}
+
+.candle-main{
+    position: relative;
+    background-image: url(../img/candle-text.svg);
+    background-size: 50px 500px;
+    background-repeat: no-repeat;
+    background-position: bottom; 
+}
+
+.candle-bottom{
+    width: 200px;
+    margin-top: -1px;
+}
+
+.wick{
+    position: absolute;
+    top: -80px;
+    left: 95px;
+    height: 40px;
+    width: 10px;
+    background: #235E6F;
+    border-radius: 30px;
+
+}
+
+.flame{
+    position: absolute;
+    top: -150px;
+    left: 80px;
+    width: 40px;
+    margin: 0 auto;
+    animation-name: flicker;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+footer{
+    color: white;
+    background: #0F8A5F;
+}
+
+.hidden{
+    display: none;
+}
+  
+  /* Standard syntax */
+  @keyframes flicker {
+    0%   {height: 83px;}
+    20%  {height: 85px;}
+    40%  {height: 82px;}
+    60%  {height: 85px;}
+    80%  {height: 83px;}
+    100% {height: 81px;}
+  }
