@@ -10,13 +10,18 @@ h1, h2, h3, p{
     font-family: 'Mountains of Christmas', cursive;
 }
 
+h1{
+    margin: 10px 0;
+}
+
 p{
     font-family: 'Open Sans', sans-serif;
 }
 
 body{
     margin: 0;
-    background: #34A65F;
+    /* background: #34A65F; */
+    background: #0F8A5F;
 }
 
 header{
@@ -29,7 +34,13 @@ header{
 .text{
     text-align: center;
     margin: 0;
-    padding: 10px 0;
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+#text{
+    margin-top: 0;
 }
 
 #text block{
